@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-<link rel="icon" href="assets/img/icons8-calculator-48.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="icon" href="assets/img/icons8-calculator-48.png">
+    <script defer src="script.js"/></script>
     <title>Calculator</title>
   </head>
   <body>
@@ -180,31 +181,8 @@
           </table>
         </div>
       </div>
-      <div class="settings__button">*</div>
-      <div class="settings__block">
-        <div class="settings__shape">
-          <div class="option__shape option__block">
-            <div class="current__shape circle"><div class="round"></div></div>
-            <div class="shape__arrow">\/</div>
-          </div>
-          <ul class="shape__list list">
-            <li class="list__item"><div class="round"></div></li>
-            <li class="list__item"><div class="square"></div></li>
-          </ul>
-        </div>
-        <div class="settings__color">
-          <div class="option__color option__block">
-            <div class="current__color circle"><div class="yellow-brown circle"></div></div>
-            <div class="color__arrow">\/</div>
-          </div>
-          <ul class="color__list list">
-            <li class="list__item"><div class="default circle"></div></li>
-            <li class="list__item"><div class="yellow-brown circle"></div></li>
-            <li class="list__item"><div class="black-red circle"></div></li>
-            <li class="list__item"><div class="yellow-red circle"></div></li>
-          </ul>
-        </div>
         <div class="settings__instruction">
+          <span class="settings__title">Show instruction</span>
           <div class="option__instruction option__block">
             <label for="instruction" class="toggler">
               <input type="checkbox" name="instruction" class="checkbox">
@@ -213,6 +191,5 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
