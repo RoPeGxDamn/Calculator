@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<link rel="icon" href="assets/img/icons8-calculator-48.png">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calc">
+        <div class="calc__display">
+            <div class="computed__block"></div>
+            <div class="result__block"><span class="equal">=</span><div class="result__value"></div></div>
+        </div>
+        <div class="calc__grid">
+          <div class="grid__item additional">
+            <div class="calc__button degree">
+              x<sup>y</sup>
+            </div>
+          </div>
+            <div class="grid__item additional">
+              <div class="calc__button lg">
+                lg
+              </div>
+            </div>
+            <div class="grid__item additional">
+              <div class="calc__button ln">
+                ln
+              </div>
+            </div>
+            <div class="grid__item additional large">
+              <div class="calc__button plus-minus">
+                +/-
+              </div>
+            </div>
+            <div class="grid__item additional">
+              <div class="calc__button root">
+                &radic; <span class="after-radic">x</span>
+              </div>
+            </div>
+          <div class="grid__item">
+            <div class="calc__button clear-button">AC</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button backspace">
+                <span class="material-icons">backspace</span>
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button operation percent">%</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button operation divide">&divide;</div>
+          </div>
+          <div class="grid__item additional">
+            <div class="calc__button radical">x<span class="after-x">!</span></div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button number">7</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button number">8</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button number">9</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button operation multiply">&times;</div>
+          </div>
+          <div class="grid__item additional">
+            <div class="calc__button neg-degree">1/x</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button number">4</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button number">5</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button number">6</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button operation minus">-</div>
+          </div>
+          <div class="grid__item additional">
+            <div class="calc__button pi">&pi;</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button number">1</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button number">2</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button number">3</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button operation plus">+</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button extend-button"><span class="material-icons">
+                open_with
+                </span></div>
+          </div>
+          <div class="grid__item additional">
+            <div class="calc__button exp">e</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button number">0</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button operation dot">.</div>
+          </div>
+          <div class="grid__item">
+            <div class="calc__button result-button">=</div>
+          </div>
+        </div>
+        <div class="instruction__block">
+          <table class="instruction__table">
+            <div class="table__title">Instruction</div>
+            <thead>
+              <th>Combo</th><th>Meaning</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Shift + R</td>
+                <td>Extend / Exit</td>
+              </tr>
+              <tr>
+                <td>Shift + E</td>
+                <td>e</td>
+              </tr>
+              <tr>
+                <td>Shift + P</td>
+                <td>&pi;</td>
+              </tr>
+              <tr>
+                <td>Shift + N</td>
+                <td>ln</td>
+              </tr>
+              <tr>
+                <td>Shift + G</td>
+                <td>lg</td>
+              </tr>
+              <tr>
+                <td>Shift + D</td>
+                <td>x<sup>y</sup></td>
+              </tr>
+              <tr>
+                <td>Shift + B</td>
+                <td>&radic;<span class="after-radic">x</span></td>
+              </tr>
+              <tr>
+                <td>Shift + W</td>
+                <td>x !</td>
+              </tr>
+              <tr>
+                <td>Shift + T</td>
+                <td>1 / x</td>
+              </tr>
+              <tr>
+                <td>Shift + H</td>
+                <td>+/-</td>
+              </tr>
+              <tr>
+                <td>Esc</td>
+                <td>AC / C</td>
+              </tr>
+              <tr>
+                <td>Enter / =</td>
+                <td>=</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="settings__button">*</div>
+      <div class="settings__block">
+        <div class="settings__shape">
+          <div class="option__shape option__block">
+            <div class="current__shape circle"><div class="round"></div></div>
+            <div class="shape__arrow">\/</div>
+          </div>
+          <ul class="shape__list list">
+            <li class="list__item"><div class="round"></div></li>
+            <li class="list__item"><div class="square"></div></li>
+          </ul>
+        </div>
+        <div class="settings__color">
+          <div class="option__color option__block">
+            <div class="current__color circle"><div class="yellow-brown circle"></div></div>
+            <div class="color__arrow">\/</div>
+          </div>
+          <ul class="color__list list">
+            <li class="list__item"><div class="default circle"></div></li>
+            <li class="list__item"><div class="yellow-brown circle"></div></li>
+            <li class="list__item"><div class="black-red circle"></div></li>
+            <li class="list__item"><div class="yellow-red circle"></div></li>
+          </ul>
+        </div>
+        <div class="settings__instruction">
+          <div class="option__instruction option__block">
+            <label for="instruction" class="toggler">
+              <input type="checkbox" name="instruction" class="checkbox">
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
